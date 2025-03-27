@@ -26,4 +26,28 @@ public class Addition
 		Assert.ThrowsException<ArgumentNullException>(() => Program.Add(null, "1"));
 		Assert.ThrowsException<ArgumentNullException>(() => Program.Add(null, null));
 	}
+
+    [TestMethod]
+    public void Substract_Valid_Kwok()
+    {
+        Assert.AreEqual(-1, Program.Subtract("1", "2"));
+    }
+
+    [TestMethod]
+    public void Multiply_Valid_Kwok()
+    {
+        Assert.AreEqual(2, Program.Multiply("1", "2"));
+    }
+
+    [TestMethod]
+    public void Division_Valid_Kwok()
+    {
+        Assert.AreEqual(2, Program.Divide("4", "2"));
+    }
+
+    [TestMethod]
+    public void Power_Valid_Kwok()
+    {
+        Assert.AreEqual(8, Program.Power("2", "3"));
+    }
 }
