@@ -30,7 +30,6 @@ public class Addition
     [TestMethod]
     public void Substract_Valid_Kwok()
     {
-        Assert.AreEqual(-1, Program.Add("1", "2"));             // Failing One
         Assert.AreEqual(-1, Program.Subtract("1", "2"));
     }
 
